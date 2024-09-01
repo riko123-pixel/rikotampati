@@ -1,5 +1,27 @@
 const friendLists = document.getElementById("friend_list");
 
+
+async function Pencarian(apayangdicari) {
+  let  data = await fetch('./data.json')
+  friendLists.innerHTML = ""
+  data = await data.json()
+  let comp = ""
+  data.forEach( i => {
+
+    if (String(i.nama).toLocaleLowerCase().includes(apayangdicari.toLocaleLowerCase())){
+      console.log(i)
+    comp += element(i);
+    }
+  })
+  friendLists.innerHTML = comp
+}
+
+document.querySelector('form').addEventListener('submit',(e)=> {
+  e.preventDefault();
+  const cari = document.getElementById('cari').value
+  Pencarian(cari)
+} )
+
 const element  = (i) => {
   return `
       <li>
