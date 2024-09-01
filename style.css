@@ -9,18 +9,11 @@
   color: rgb(0, 0, 0);
 }
 
-/* body { */
-    background-color: rgb(255, 0, 0) ;
-    background: linear-gradient(-45deg, #000000, #ff0000, #ffffff, #ff0000);
-    color: transparent;
-    background-clip: padding-box;
-    background-clip: text;
+body {
+    background-color: rgb(81, 1, 1) ;
+    
 
   }
-
-p {
-  color: rgb(0, 0, 0); /*Silahkan ubah warna text dengan cara mengubah kode warna yg ada di samping*/
-}
 
 .container {
   margin: 0 auto;
@@ -31,7 +24,7 @@ p {
 header figure img {
   width: 7rem;
    border-radius: 50px; /*ini untuk ubah bentuk */
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px rgb(255, 255, 255);
   padding: 0.25rem;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -39,43 +32,12 @@ header figure img {
   -o-border-radius: 50px;
 }
 
-
-
-/* header figure figcaption span:first-child { */
-  font-size: 1.7rem;
-  line-height: 2rem;
-  font-weight: 500;
-}
-
-
-
-/* header section { */
-  margin-top: 2rem;
-}
-
-/* header section h1 {  */
-  font-weight: 500;
-  margin-bottom: .5rem;
-  scroll-margin-top: 2rem;
-}
-
-/* header section p { */
-  text-align: justify;
-}
-
-
-/* Main */
-main {
-  max-width: 1280px;
-}
-
 main .main_title {
   margin-bottom: 36px;
   text-align: center;
 }
 
-main .main_title span { 
-}
+
 
 main ul {
   display: grid ;
@@ -85,7 +47,7 @@ main ul {
 }
 
 main ul li figure.card {
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px rgb(255, 255, 255);
   border-radius: 12px;
   padding: 1rem;
 }
@@ -163,11 +125,6 @@ footer p {
     order: 2;
   }
 
-  /* header figure figcaption span:first-child { */
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   header figure figcaption span:last-child {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -213,22 +170,45 @@ footer p {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
- p {
-  color: rgb(0, 0, 0);
-} 
+
 
 
 span {
-  color: black;
+  background-color: rgb(0, 0, 0) ;
+  background: linear-gradient(-45deg, #ffffff, #0400ff, #ffffff, #001eff);
+  color: transparent;
+  background-clip: padding-box;
   background-clip: text;
 
 }
 
-
-h2 {
-  color: black;
+  
+.container h2 {
+  color: rgb(255, 255, 255);
   background-clip: text;
 }
+
+
+.pencarian{
+  color: #000000;
+  /* background: #2200ff; */
+  border: 1px solid #000000;
+  padding: 10px 30px;
+  font-size: 135%;
+  margin: 50px auto;
+  transition: background 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 25px;
+  display: flex;
+}
+
+.container h1{
+  color: #ffffff;
+}
+
+p{
+  color: white;
+}
+
 
 
 
