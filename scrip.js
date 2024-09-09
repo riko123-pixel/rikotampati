@@ -28,7 +28,7 @@ const element  = (i) => {
         <figure class="card">
           <div class="card_header">
             <div class="card_image">
-              <img src="${i.fotoformal}" alt="${i.nama}" width="100%">
+              <img src="${i.fotoselfie}" alt="${i.nama}" width="100%">
             </div>
             <div class="card_description">
               <span>${i.nama}</span>
